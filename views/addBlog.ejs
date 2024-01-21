@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <title>Add New Blog</title>
+            <%- include('./partials/head') %>
+      </head>
+      <body>
+            <!-- navbar -->
+            <%- include('./partials/navbar') %>
+
+            <div class="container mt-3">
+                  <form action="/blog" method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="coverImage" class="form-label"
+                              >Cover Image</label
+                        >
+                        <input
+                              type="file"
+                              class="form-control"
+                              id="coverImage"
+                              aria-describedby="emailHelp"
+                              name="coverImage"
+                        />
+                  </div>
+
+
+                        <div class="mb-3">
+                              <label for="title" class="form-label"
+                                    >title</label
+                              >
+                              <input
+                                    type="text"
+                                    class="form-control"
+                                    id="title"
+                                    aria-describedby="emailHelp"
+                                    name="title"
+                              />
+                        </div>
+
+
+                        <div class="mb-3">
+                              <label for="body" class="form-label"
+                                    >Content</label
+                              >
+                              <textarea
+                                    type="text"
+                                    class="form-control"
+                                    id="body"
+                                    name="body"
+                              />
+                        </textarea>
+                        </div>
+                        <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">
+                              Submit
+                        </button>
+                    </div>
+                  </form>
+            </div>
+
+            <%-include('./partials/scripts')%>
+      </body>
+</html>
