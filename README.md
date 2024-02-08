@@ -4,7 +4,7 @@
 
 Welcome to Blogify, an advanced blogging platform built with Node.js and Express.js. Blogify provides a seamless experience for bloggers, allowing you to create, manage, and share your content with the world. With JWT authentication, your blog is secure, and you have full control over your platform.
 
-!(./public/images/priview.png)
+![Blogify](./public/images/preview.png)
 
 ## Technologies Used
 
